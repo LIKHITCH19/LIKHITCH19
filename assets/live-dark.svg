@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="230" viewBox="0 0 480 230" role="img" aria-label="Live tile: waiting for the first BLS update">
+<title>Live tile: waiting for the first BLS update</title>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; }
+  .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+  .rise { opacity: 0; animation: rise .7s cubic-bezier(.25,.1,.25,1) forwards; }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade, .rise { animation: none; opacity: 1; }
+  }
+  
+</style>
+
+<rect x="0.5" y="0.5" width="479" height="229" rx="12" fill="#161b22" stroke="#30363d"/>
+<text x="24" y="38" font-size="11.5" font-weight="600" fill="#6e7681" text-anchor="start" letter-spacing="1.2">LIVE · BLS API · GITHUB ACTIONS</text>
+<text x="24" y="64" font-size="17" font-weight="600" fill="#f0f6fc" text-anchor="start">Restaurant menu inflation</text>
+<text x="24" y="116" font-size="30" font-weight="600" fill="#9198a1" text-anchor="start">Updating…</text>
+</svg>

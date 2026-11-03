@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="230" viewBox="0 0 480 230" role="img" aria-label="Swiggy sales dashboard: total sales corrected from 46.19M to 53.01M rupees">
+<title>Swiggy sales dashboard: total sales corrected from 46.19M to 53.01M rupees</title>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; }
+  .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+  .rise { opacity: 0; animation: rise .7s cubic-bezier(.25,.1,.25,1) forwards; }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade, .rise { animation: none; opacity: 1; }
+  }
+  
+</style>
+
+<rect x="0.5" y="0.5" width="479" height="229" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<text x="24" y="38" font-size="11.5" font-weight="600" fill="#818b98" text-anchor="start" letter-spacing="1.2" class="fade" style="animation-delay:0.00s">EXCEL</text>
+<text x="24" y="64" font-size="17" font-weight="600" fill="#1f2328" text-anchor="start" class="fade" style="animation-delay:0.10s">Swiggy sales dashboard</text>
+<text x="24" y="112" font-size="34" font-weight="700" fill="#1f2328" text-anchor="start" class="rise" style="animation-delay:0.35s">13%</text>
+<text x="24" y="136" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start" class="fade" style="animation-delay:0.50s">of sales hidden by a stuck slicer</text>
+<text x="24" y="166" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start" class="fade" style="animation-delay:0.65s">197K order lines; fixed the filter so</text>
+<text x="24" y="184" font-size="12.5" font-weight="400" fill="#59636e" text-anchor="start" class="fade" style="animation-delay:0.70s">every KPI counts January.</text>
+<text x="24" y="210" font-size="12" font-weight="600" fill="#2a78d6" text-anchor="start" class="fade" style="animation-delay:0.90s">Open repo →</text>
+<line x1="300" y1="178" x2="456" y2="178" stroke="#e1e6eb"/>
+<rect x="317.0" y="178" width="52.0" height="0" rx="3" fill="#afb8c1"><animate attributeName="height" from="0" to="94.1" begin="0.5s" dur="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1"/><animate attributeName="y" from="178" to="83.9" begin="0.5s" dur="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1"/></rect>
+<text x="343.0" y="76.89473684210527" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="middle" class="fade" style="animation-delay:1.10s">₹46.2M</text>
+<text x="343.0" y="195" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="middle" class="fade" style="animation-delay:0.80s">As found</text>
+<rect x="387.0" y="178" width="52.0" height="0" rx="3" fill="#2a78d6"><animate attributeName="height" from="0" to="108.0" begin="0.65s" dur="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1"/><animate attributeName="y" from="178" to="70.0" begin="0.65s" dur="0.8s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.25 0.1 0.25 1"/></rect>
+<text x="413.0" y="63.0" font-size="12.5" font-weight="600" fill="#1f2328" text-anchor="middle" class="fade" style="animation-delay:1.25s">₹53.0M</text>
+<text x="413.0" y="195" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="middle" class="fade" style="animation-delay:0.80s">Fixed</text>
+</svg>
