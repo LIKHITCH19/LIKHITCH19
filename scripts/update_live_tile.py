@@ -100,6 +100,7 @@ def main():
     for t in THEMES:
         (ROOT / "assets" / f"live-{t}.svg").write_text(render(t, pts))
         (ROOT / "assets" / f"live-m-{t}.svg").write_text(render(t, pts, True))
+        (ROOT / "assets" / f"live-w-{t}.svg").write_text(render(t, pts, "w"))
     print(f"Latest: {pts[-1][0]} {pts[-1][1]:+.2f}% y/y")
     return 0
 

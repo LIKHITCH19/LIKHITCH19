@@ -14,11 +14,14 @@ DISP = (405, 194)             # desktop display size, fits two per row
 
 
 def frame(t, kicker, title, big, label, caption, chart, aria, m=False):
-    """One card. m=True draws the phone layout: text on top, chart bottom right."""
+    """One card. m=True: phone layout. m="w": wide layout for mid-size screens."""
     c = THEMES[t]
-    w, h = (MW, MH) if m else (W, H)
+    wide = m == "w"           # mid-size screens: one card per row, chart pushed right
+    if wide:
+        m = False
+    w, h = (MW, MH) if m else ((800, H) if wide else (W, H))
     x = 18 if m else 24
-    out = [svg_open(w, h, t, aria, disp=None if m else DISP)]
+    out = [svg_open(w, h, t, aria, disp=None if (m or wide) else DISP)]
     out.append(f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="12" '
                f'fill="{c["card"]}" stroke="{c["border"]}"/>')
     top = 32 if m else 38
@@ -34,7 +37,11 @@ def frame(t, kicker, title, big, label, caption, chart, aria, m=False):
                         cls="fade", d=0.65 + i * 0.05))
     out.append(text(x, h - 22 if m else 210, "Open repo \u2192", 12,
                     c["accent"], 600, cls="fade", d=0.9))
-    out.append(f'<g transform="translate(-114,114)">{chart}</g>' if m else chart)
+    if m:
+        chart = f'<g transform="translate(-114,114)">{chart}</g>'
+    elif wide:
+        chart = f'<g transform="translate(215,-24) scale(1.15)">{chart}</g>'
+    out.append(chart)
     out.append("</svg>\n")
     return "\n".join(out)
 

@@ -32,6 +32,7 @@ def main():
         for name, fn in STATIC.items():
             (ASSETS / f"{name}-{t}.svg").write_text(fn(t))
             (ASSETS / f"{name}-m-{t}.svg").write_text(fn(t, True))
+            (ASSETS / f"{name}-w-{t}.svg").write_text(fn(t, "w"))
         live = ASSETS / f"live-{t}.svg"
         if not live.exists():
             live.write_text(placeholder(t))
