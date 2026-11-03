@@ -65,7 +65,7 @@ def nice_month(k, short=False):
     return f"{MONTHS[int(m) - 1]} '{y[2:]}" if short else f"{MONTHS[int(m) - 1]} {y}"
 
 
-def render(t, pts):
+def render(t, pts, m=False):
     vals = [round(v, 1) for _, v in pts]
     lo, hi = min(vals), max(vals)
     pad = max(0.4, (hi - lo) * 0.25)
@@ -82,7 +82,7 @@ def render(t, pts):
                   "Price is my Chipotle model's top lever."],
                  chart,
                  f"Restaurant menu inflation: CPI food away from home up {latest:.1f}% "
-                 f"year over year in {nice_month(pts[-1][0])}")
+                 f"year over year in {nice_month(pts[-1][0])}", m)
 
 
 def main():
@@ -99,6 +99,7 @@ def main():
     DATA.write_text(json.dumps({"series": SERIES, "index": index}, indent=1) + "\n")
     for t in THEMES:
         (ROOT / "assets" / f"live-{t}.svg").write_text(render(t, pts))
+        (ROOT / "assets" / f"live-m-{t}.svg").write_text(render(t, pts, True))
     print(f"Latest: {pts[-1][0]} {pts[-1][1]:+.2f}% y/y")
     return 0
 

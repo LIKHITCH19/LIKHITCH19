@@ -4,7 +4,7 @@ from pathlib import Path
 
 from svgkit import THEMES, svg_open, text
 from header import header
-from flow import flow
+from flow import flow, flow_phone
 from tiles import STATIC, W, H
 
 ASSETS = Path(__file__).resolve().parents[1] / "assets"
@@ -26,12 +26,17 @@ def main():
     ASSETS.mkdir(exist_ok=True)
     for t in THEMES:
         (ASSETS / f"header-{t}.svg").write_text(header(t))
+        (ASSETS / f"header-m-{t}.svg").write_text(header(t, True))
         (ASSETS / f"flow-{t}.svg").write_text(flow(t))
+        (ASSETS / f"flow-m-{t}.svg").write_text(flow_phone(t))
         for name, fn in STATIC.items():
             (ASSETS / f"{name}-{t}.svg").write_text(fn(t))
+            (ASSETS / f"{name}-m-{t}.svg").write_text(fn(t, True))
         live = ASSETS / f"live-{t}.svg"
         if not live.exists():
             live.write_text(placeholder(t))
+        if not (ASSETS / f"live-m-{t}.svg").exists():
+            (ASSETS / f"live-m-{t}.svg").write_text(live.read_text())
     print("wrote", len(list(ASSETS.glob("*.svg"))), "svgs")
 
 

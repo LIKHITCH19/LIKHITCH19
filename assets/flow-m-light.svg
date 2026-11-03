@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="330" viewBox="0 0 360 330" role="img" aria-label="How I work: business question, public data, clean and check, SQL and Python analysis, model or dashboard, write-up">
+<title>How I work: business question, public data, clean and check, SQL and Python analysis, model or dashboard, write-up</title>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; }
+  .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+  .rise { opacity: 0; animation: rise .7s cubic-bezier(.25,.1,.25,1) forwards; }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade, .rise { animation: none; opacity: 1; }
+  }
+  
+</style>
+
+<g class="rise" style="animation-delay:0.10s">
+<rect x="1" y="1" width="358" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="1" width="3" height="48" rx="1.5" fill="#2a78d6"/>
+<text x="18" y="30" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">1</text>
+<text x="40" y="22" font-size="13.5" font-weight="600" fill="#1f2328" text-anchor="start">Business question</text>
+<text x="40" y="39" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">the decision at stake</text>
+</g>
+<g class="rise" style="animation-delay:0.25s">
+<rect x="1" y="57" width="358" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="57" width="3" height="48" rx="1.5" fill="#2a78d6"/>
+<text x="18" y="86" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">2</text>
+<text x="40" y="78" font-size="13.5" font-weight="600" fill="#1f2328" text-anchor="start">Public data</text>
+<text x="40" y="95" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">from the source</text>
+</g>
+<g class="rise" style="animation-delay:0.40s">
+<rect x="1" y="113" width="358" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="113" width="3" height="48" rx="1.5" fill="#2a78d6"/>
+<text x="18" y="142" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">3</text>
+<text x="40" y="134" font-size="13.5" font-weight="600" fill="#1f2328" text-anchor="start">Clean and check</text>
+<text x="40" y="151" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">vs reported totals</text>
+</g>
+<g class="rise" style="animation-delay:0.55s">
+<rect x="1" y="169" width="358" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="169" width="3" height="48" rx="1.5" fill="#2a78d6"/>
+<text x="18" y="198" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">4</text>
+<text x="40" y="190" font-size="13.5" font-weight="600" fill="#1f2328" text-anchor="start">SQL and Python</text>
+<text x="40" y="207" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">analysis</text>
+</g>
+<g class="rise" style="animation-delay:0.70s">
+<rect x="1" y="225" width="358" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="225" width="3" height="48" rx="1.5" fill="#2a78d6"/>
+<text x="18" y="254" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">5</text>
+<text x="40" y="246" font-size="13.5" font-weight="600" fill="#1f2328" text-anchor="start">Model or dashboard</text>
+<text x="40" y="263" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">Excel or Tableau</text>
+</g>
+<g class="rise" style="animation-delay:0.85s">
+<rect x="1" y="281" width="358" height="48" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="281" width="3" height="48" rx="1.5" fill="#2a78d6"/>
+<text x="18" y="310" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">6</text>
+<text x="40" y="302" font-size="13.5" font-weight="600" fill="#1f2328" text-anchor="start">Write-up</text>
+<text x="40" y="319" font-size="12" font-weight="400" fill="#59636e" text-anchor="start">findings and limits</text>
+</g>
+</svg>

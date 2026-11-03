@@ -43,3 +43,25 @@ def flow(t):
                      f'style="animation-delay:{d+0.2:.2f}s"/>')
     o.append("</svg>\n")
     return "\n".join(o)
+
+
+def flow_phone(t):
+    """Phone layout: the same six steps as a vertical list."""
+    c = THEMES[t]
+    rh, gap = 48, 8
+    h = 6 * rh + 5 * gap + 2
+    o = [svg_open(360, h, t, "How I work: business question, public data, "
+                  "clean and check, SQL and Python analysis, model or "
+                  "dashboard, write-up")]
+    for i, (num, l1, l2) in enumerate(STEPS):
+        y = 1 + i * (rh + gap)
+        o.append(f'<g class="rise" style="animation-delay:{0.1 + i * 0.15:.2f}s">')
+        o.append(f'<rect x="1" y="{y}" width="358" height="{rh}" rx="10" '
+                 f'fill="{c["card"]}" stroke="{c["border"]}"/>')
+        o.append(f'<rect x="1" y="{y}" width="3" height="{rh}" rx="1.5" fill="{c["accent"]}"/>')
+        o.append(text(18, y + 29, num, 13, c["accent"], 700))
+        o.append(text(40, y + 21, l1, 13.5, c["ink"], 600))
+        o.append(text(40, y + 38, l2, 12, c["ink2"], 400))
+        o.append("</g>")
+    o.append("</svg>\n")
+    return "\n".join(o)

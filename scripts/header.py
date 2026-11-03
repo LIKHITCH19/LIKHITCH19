@@ -10,15 +10,49 @@ from svgkit import THEMES, svg_open, text, reveal_clip, EASE
 W, H = 1000, 300
 
 
-def header(t):
+MW, MH = 360, 470   # phone layout: text on top, chart below
+
+
+def header(t, m=False):
     c = THEMES[t]
-    o = [svg_open(W, H, t, "Likhit Vardhan Chiliveri, Business Analyst. "
+    w, h = (MW, MH) if m else (W, H)
+    o = [svg_open(w, h, t, "Likhit Vardhan Chiliveri, Business Analyst. "
                   "Chart: Chipotle restaurant margin 26.7% (2024), 25.4% (2025), "
                   "forecast 23.4% (2026) and 22.4% (2027, range 20.6% to 23.9%)")]
-    o.append(f'<rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="14" '
+    o.append(f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="14" '
              f'fill="{c["card"]}" stroke="{c["border"]}"/>')
+    if m:
+        o += who_phone(c)
+        o.append('<g transform="translate(-485.3,224) scale(0.842)">')
+        o += chart(c)
+        o.append("</g>")
+    else:
+        o += who_desktop(c)
+        o.append(f'<line x1="574" y1="36" x2="574" y2="{H-36}" stroke="{c["border"]}"/>')
+        o += chart(c)
+    o.append("</svg>\n")
+    return "\n".join(o)
 
-    # left: who
+
+def who_phone(c):
+    o = [text(20, 36, "BUSINESS ANALYST \u00b7 FP&A", 11.5, c["accent"], 700,
+              spacing=1.4, cls="fade", d=0.0),
+         text(20, 76, "Likhit Vardhan", 30, c["ink"], 700, cls="rise", d=0.1),
+         text(20, 112, "Chiliveri", 30, c["ink"], 700, cls="rise", d=0.2)]
+    for i, line in enumerate(["I build the model, tie every number",
+                              "back to its source, and say what it",
+                              "means for the business."]):
+        o.append(text(20, 146 + i * 20, line, 14, c["ink2"], 400, cls="fade",
+                      d=0.5 + i * 0.05))
+    o.append(text(20, 218, "FP&A intern @ NOV Inc. \u00b7 Denton, TX", 12,
+                  c["muted"], 500, cls="fade", d=0.8))
+    o.append(text(20, 236, "Excel, SQL, Python, Tableau, Power BI", 12,
+                  c["muted"], 500, cls="fade", d=0.8))
+    return o
+
+
+def who_desktop(c):
+    o = []
     o.append(text(44, 62, "BUSINESS ANALYST · FP&A", 13, c["accent"], 700,
                   spacing=1.6, cls="fade", d=0.0))
     o.append(text(44, 108, "Likhit Vardhan", 40, c["ink"], 700, cls="rise", d=0.1))
@@ -29,8 +63,11 @@ def header(t):
                   15.5, c["ink2"], 400, cls="fade", d=0.55))
     o.append(text(44, 262, "FP&A intern @ NOV Inc.  ·  Denton, TX  ·  Excel, SQL, Python, Tableau, Power BI",
                   13, c["muted"], 500, cls="fade", d=0.8))
+    return o
 
-    # right: chart
+
+def chart(c):
+    o = []
     x0, x1, yT, yB = 600, 950, 88, 228
     vmin, vmax = 19, 28
     xs = [x0 + 20, x0 + 120, x0 + 220, x0 + 320]
@@ -38,7 +75,6 @@ def header(t):
     def py(v):
         return yB - (yB - yT) * (v - vmin) / (vmax - vmin)
 
-    o.append(f'<line x1="574" y1="36" x2="574" y2="{H-36}" stroke="{c["border"]}"/>')
     o.append(text(x0, 52, "Chipotle restaurant margin", 14, c["ink"], 600,
                   cls="fade", d=0.3))
     o.append(text(x0, 71, "reported, then my forecast", 12.5, c["ink2"], 400,
@@ -98,8 +134,7 @@ def header(t):
     o.append(f'<line x1="{x0+96}" y1="{ly-4}" x2="{x0+114}" y2="{ly-4}" stroke="{c["accent"]}" stroke-width="2.5" stroke-dasharray="6 5" class="fade" {delay_attr(0.5)}/>')
     o.append(text(x0 + 120, ly, "My forecast (Oct 30)", 12, c["ink2"], 400,
                   cls="fade", d=0.5))
-    o.append("</svg>\n")
-    return "\n".join(o)
+    return o
 
 
 def delay_attr(sec):

@@ -32,8 +32,9 @@ def esc(s):
             .replace(">", "&gt;"))
 
 
-def svg_open(w, h, t, title, extra_css=""):
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(title)}">
+def svg_open(w, h, t, title, extra_css="", disp=None):
+    dw, dh = disp or (w, h)
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{dw}" height="{dh}" viewBox="0 0 {w} {h}" role="img" aria-label="{esc(title)}">
 <title>{esc(title)}</title>
 <style>
   text {{ font-family: {FONT}; font-variant-numeric: tabular-nums; }}
