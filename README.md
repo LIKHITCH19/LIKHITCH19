@@ -28,14 +28,10 @@ The Chipotle forecast was published on [Tableau Public](https://public.tableau.c
 
 ### How I work
 
-```mermaid
-flowchart LR
-    A[Business question] --> B[Public data<br/>from the source]
-    B --> C[Clean it and<br/>check it against<br/>reported totals]
-    C --> D[SQL and Python<br/>analysis]
-    D --> E[Excel model or<br/>Tableau / Power BI<br/>dashboard]
-    E --> F[Write-up: findings,<br/>limits, next steps]
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg">
+  <img alt="How I work: business question, public data from the source, clean and check against reported totals, SQL and Python analysis, Excel model or Tableau / Power BI dashboard, write-up of findings, limits and next steps" src="assets/flow-light.svg" width="100%">
+</picture>
 
 ### Experience
 

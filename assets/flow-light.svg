@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img" aria-label="How I work: business question, public data, clean and check, SQL and Python analysis, Excel model or dashboard, write-up">
+<title>How I work: business question, public data, clean and check, SQL and Python analysis, Excel model or dashboard, write-up</title>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; font-variant-numeric: tabular-nums; }
+  .fade { opacity: 0; animation: fade .6s ease-out forwards; }
+  .rise { opacity: 0; animation: rise .7s cubic-bezier(.25,.1,.25,1) forwards; }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade, .rise { animation: none; opacity: 1; }
+  }
+  
+</style>
+
+<g class="rise" style="animation-delay:0.15s">
+<rect x="1.0" y="18" width="148.0" height="112" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1.0" y="18" width="148.0" height="3" rx="1.5" fill="#2a78d6"/>
+<text x="15.0" y="52" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">1</text>
+<text x="15.0" y="82" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Business question</text>
+<text x="15.0" y="102" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">the decision at stake</text>
+</g>
+<path d="M153.0,74.0 h12 m-5,-4 l5,4 l-5,4" fill="none" stroke="#818b98" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="fade" style="animation-delay:0.35s"/>
+<g class="rise" style="animation-delay:0.37s">
+<rect x="171.0" y="18" width="148.0" height="112" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="171.0" y="18" width="148.0" height="3" rx="1.5" fill="#2a78d6"/>
+<text x="185.0" y="52" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">2</text>
+<text x="185.0" y="82" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Public data</text>
+<text x="185.0" y="102" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">from the source</text>
+</g>
+<path d="M323.0,74.0 h12 m-5,-4 l5,4 l-5,4" fill="none" stroke="#818b98" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="fade" style="animation-delay:0.57s"/>
+<g class="rise" style="animation-delay:0.59s">
+<rect x="341.0" y="18" width="148.0" height="112" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="341.0" y="18" width="148.0" height="3" rx="1.5" fill="#2a78d6"/>
+<text x="355.0" y="52" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">3</text>
+<text x="355.0" y="82" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Clean and check</text>
+<text x="355.0" y="102" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">vs reported totals</text>
+</g>
+<path d="M493.0,74.0 h12 m-5,-4 l5,4 l-5,4" fill="none" stroke="#818b98" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="fade" style="animation-delay:0.79s"/>
+<g class="rise" style="animation-delay:0.81s">
+<rect x="511.0" y="18" width="148.0" height="112" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="511.0" y="18" width="148.0" height="3" rx="1.5" fill="#2a78d6"/>
+<text x="525.0" y="52" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">4</text>
+<text x="525.0" y="82" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">SQL and Python</text>
+<text x="525.0" y="102" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">analysis</text>
+</g>
+<path d="M663.0,74.0 h12 m-5,-4 l5,4 l-5,4" fill="none" stroke="#818b98" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="fade" style="animation-delay:1.01s"/>
+<g class="rise" style="animation-delay:1.03s">
+<rect x="681.0" y="18" width="148.0" height="112" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="681.0" y="18" width="148.0" height="3" rx="1.5" fill="#2a78d6"/>
+<text x="695.0" y="52" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">5</text>
+<text x="695.0" y="82" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Model or dashboard</text>
+<text x="695.0" y="102" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">Excel or Tableau</text>
+</g>
+<path d="M833.0,74.0 h12 m-5,-4 l5,4 l-5,4" fill="none" stroke="#818b98" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="fade" style="animation-delay:1.23s"/>
+<g class="rise" style="animation-delay:1.25s">
+<rect x="851.0" y="18" width="148.0" height="112" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="851.0" y="18" width="148.0" height="3" rx="1.5" fill="#2a78d6"/>
+<text x="865.0" y="52" font-size="13" font-weight="700" fill="#2a78d6" text-anchor="start">6</text>
+<text x="865.0" y="82" font-size="13" font-weight="600" fill="#1f2328" text-anchor="start">Write-up</text>
+<text x="865.0" y="102" font-size="11.5" font-weight="400" fill="#59636e" text-anchor="start">findings and limits</text>
+</g>
+</svg>

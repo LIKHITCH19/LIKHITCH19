@@ -73,7 +73,7 @@ def render(t, pts):
     chart = line(t, "clipL", [(0, nice_month(pts[0][0], True)),
                               (n - 1, nice_month(pts[-1][0], True))],
                  vals, lambda v: f"{v:+.1f}%", lo - pad, hi + pad,
-                 mark_all=False, label_idx=[n - 1])
+                 mark_all=False, label_idx=[])
     latest = vals[-1]
     return frame(t, "LIVE · BLS API · GITHUB ACTIONS",
                  "Restaurant menu inflation", f"{latest:+.1f}%",
